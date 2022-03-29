@@ -1,5 +1,5 @@
 import React from "react";
-import If from './if'
+import If from '../if'
 
 export default props => (
     <If test={!props.hide}>
@@ -11,3 +11,6 @@ export default props => (
         </button>
     </If>
 )
+
+
+// renderização condicional no botão
