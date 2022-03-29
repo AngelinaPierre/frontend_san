@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/videoblocks-editorial-sanofi-logo-on-glass-building_rrrdsmjs_thumbnail-1080_01.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif;
+  }
+
+  #login .container #login-row #login-column #login-box {
+    margin-top: 250px;
+    margin-left: 250px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
