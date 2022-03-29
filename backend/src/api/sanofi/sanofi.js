@@ -2,7 +2,11 @@ const restful = require('node-restful')
  const mongoose = restful.mongoose
  
  const sanofiSchema = new mongoose.Schema({
-     description: {
+     username: {
+         type: String,
+         required: true,
+     },
+     password:{
          type: String,
          required: true,
      },
