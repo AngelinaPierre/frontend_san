@@ -28,7 +28,7 @@ export default props => (
                                     </label>
                                 </div>
                             </div>
-                            <div className='form-group'>
+                            <div className='form-group'>    
                                 <div className="form-outline mb-4"> 
                                     <button type='submit' className='btn btn-primary'>Login</button>
                                     <button type='submit' className='btn btn-primary'>Sign Up</button>
