@@ -1,6 +1,6 @@
 import { LoginForm } from "./LoginForm";
-import { SystemBar } from "../../components/SystemBar";
-import styles from "../../css/Login.module.css";
+import { SystemBar } from "../../components/SystemBar/SystemBar";
+import styles from "./css/Login.module.css";
 
 export const Login = () => {
   return (

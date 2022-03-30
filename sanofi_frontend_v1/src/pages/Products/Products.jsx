@@ -1,8 +1,8 @@
-import { MenuSidebar } from "../../components/MenuSidebar";
+import { MenuSidebar } from "../../components/MenuSidebar/MenuSidebar";
 import { ProductContent } from "./ProductContent";
-import { SystemBar } from "../../components/SystemBar";
-import { AppBar } from "../../components/AppBar";
-import styles from "../../css/Products.module.css";
+import { SystemBar } from "../../components/SystemBar/SystemBar";
+import { AppBar } from "../../components/AppBar/AppBar";
+import styles from "./css/Products.module.css";
 
 export const Products = () => {
   return (

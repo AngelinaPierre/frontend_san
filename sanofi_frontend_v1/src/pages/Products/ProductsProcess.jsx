@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { MenuSidebar } from "../../components/MenuSidebar";
-import { SystemBar } from "../../components/SystemBar";
-import { AppBar } from "../../components/AppBar";
-import styles from "../../css/ProductsProcess.module.css";
+import { MenuSidebar } from "../../components/MenuSidebar/MenuSidebar";
+import { SystemBar } from "../../components/SystemBar/SystemBar";
+import { AppBar } from "../../components/AppBar/AppBar";
+import styles from "./css/ProductsProcess.module.css";
 
 export const ProductsProcess = () => {
   const navigate = useNavigate();

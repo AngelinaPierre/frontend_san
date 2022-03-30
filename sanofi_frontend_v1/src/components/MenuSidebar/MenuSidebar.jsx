@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../css/MenuSidebar.module.css";
+import styles from "./MenuSidebar.module.css";
 
 export const MenuSidebar = ({ icon, icon1, icon2, icon3 }) => {
   const navigate = useNavigate();

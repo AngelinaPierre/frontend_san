@@ -1,4 +1,4 @@
-import styles from "../css/SystemBar.module.css";
+import styles from "./SystemBar.module.css";
 
 export const SystemBar = () => {
   return (

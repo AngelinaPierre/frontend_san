@@ -1,5 +1,5 @@
 import { LoginSubmitButton } from "./LoginSubmitButton";
-import styles from "../../css/LoginForm.module.css";
+import styles from "./css/LoginForm.module.css";
 
 export const LoginForm = () => {
   return (

@@ -1,7 +1,7 @@
-import { MenuSidebar } from "../../components/MenuSidebar";
-import { AppBar } from "../../components/AppBar";
-import { SystemBar } from "../../components/SystemBar";
-import styles from "../../css/Homepage.module.css";
+import { MenuSidebar } from "../../components/MenuSidebar/MenuSidebar";
+import { AppBar } from "../../components/AppBar/AppBar";
+import { SystemBar } from "../../components/SystemBar/SystemBar";
+import styles from "./css/Homepage.module.css";
 
 export const Homepage = () => {
   return (

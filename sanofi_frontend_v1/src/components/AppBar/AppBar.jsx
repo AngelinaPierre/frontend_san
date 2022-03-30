@@ -1,4 +1,4 @@
-import styles from "../css/AppBar.module.css";
+import styles from "./AppBar.module.css";
 
 export const AppBar = ({
   pageTitle,
