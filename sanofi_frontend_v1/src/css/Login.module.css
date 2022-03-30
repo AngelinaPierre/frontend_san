@@ -1,0 +1,15 @@
+.backgroundIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1215px;
+  height: 869px;
+  object-fit: cover;
+}
+.loginDiv {
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  height: 834px;
+  overflow: hidden;
+}

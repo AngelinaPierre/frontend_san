@@ -1,0 +1,109 @@
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 465px;
+  height: 480px;
+}
+.assistiveTextDiv,
+.esqueceuSuaSenha {
+  position: absolute;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+}
+.esqueceuSuaSenha {
+  top: 306px;
+  left: 69px;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+}
+.assistiveTextDiv {
+  width: calc(100% - 277.51px);
+  top: 59px;
+  right: 261.51px;
+  left: 16px;
+  display: none;
+}
+.trailingIcon {
+  position: absolute;
+  top: calc(50% - 12px - 9px);
+  right: 11.51px;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.textFieldOutline {
+  position: relative;
+  width: 323px;
+  height: 58px;
+}
+.inputTextDiv {
+  position: absolute;
+  width: calc(100% - 281.51px);
+  top: 16px;
+  right: 265.51px;
+  left: 16px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+}
+.emailInputDiv {
+  position: absolute;
+  height: 15.42%;
+  width: 69.36%;
+  top: 31.04%;
+  right: 17.36%;
+  bottom: 53.54%;
+  left: 13.28%;
+}
+.trailingIcon1 {
+  position: absolute;
+  top: calc(50% - 12px - 9px);
+  right: 11.51px;
+  width: 24px;
+  height: 24px;
+}
+.inputTextDiv1 {
+  position: absolute;
+  width: calc(100% - 277.51px);
+  top: 16px;
+  right: 261.51px;
+  left: 16px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+}
+.senhaInputDiv {
+  position: absolute;
+  height: 15.42%;
+  width: 69.36%;
+  top: 46.46%;
+  right: 17.36%;
+  bottom: 38.13%;
+  left: 13.28%;
+}
+.loginDiv {
+  position: absolute;
+  top: 97px;
+  left: 69px;
+  font-size: 34px;
+  line-height: 36px;
+  color: #000;
+  display: inline-block;
+}
+.formDiv {
+  position: absolute;
+  top: 177px;
+  left: 364px;
+  width: 465px;
+  height: 480px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Roboto;
+}
