@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AngelinaPierre/frontend_san/static/css/main.110bff23.css",
-    "main.js": "/AngelinaPierre/frontend_san/static/js/main.79afc16d.js",
-    "index.html": "/AngelinaPierre/frontend_san/index.html",
-    "main.110bff23.css.map": "/AngelinaPierre/frontend_san/static/css/main.110bff23.css.map",
-    "main.79afc16d.js.map": "/AngelinaPierre/frontend_san/static/js/main.79afc16d.js.map"
+    "main.css": "/react-front/static/css/main.110bff23.css",
+    "main.js": "/react-front/static/js/main.e18620a2.js",
+    "index.html": "/react-front/index.html",
+    "main.110bff23.css.map": "/react-front/static/css/main.110bff23.css.map",
+    "main.e18620a2.js.map": "/react-front/static/js/main.e18620a2.js.map"
   },
   "entrypoints": [
     "static/css/main.110bff23.css",
-    "static/js/main.79afc16d.js"
+    "static/js/main.e18620a2.js"
   ]
 }
