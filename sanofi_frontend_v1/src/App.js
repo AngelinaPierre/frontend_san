@@ -4,10 +4,14 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import { Login } from "./pages/Login/Login";
-import { Homepage } from "./pages/HomePage/Homepage";
-import { Products } from "./pages/Products/Products";
-import { ProductsProcess } from "./pages/Products/ProductsProcess";
+import { Login } from "./pages/login/Login";
+import { HomePage } from "./pages/homepage/HomePage";
+import { Products } from "./pages/products/Products";
+import { Equipments } from "./pages/equipments/Equipments";
+import { Users } from "./pages/users/Users";
+import { Stock } from "./pages/stock/Stock";
+import { ProductsProcess } from "./pages/products/ProductsProcess";
+import { ProdutoCronograma } from "./pages/products/ProdutoCronograma";
 import { useEffect } from "react";
 
 function App() {
@@ -25,13 +29,13 @@ function App() {
     let title = "";
     let metaDescription = "";
 
-    //Update meta titles and descriptions below
+    //TODO: Update meta titles and descriptions below
     switch (pathname) {
       case "/":
         title = "";
         metaDescription = "";
         break;
-      case "/homepage":
+      case "/home-page":
         title = "";
         metaDescription = "";
         break;
@@ -39,12 +43,28 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/equipments":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/users":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/stock":
+        title = "";
+        metaDescription = "";
+        break;
       case "/productsprocess":
         title = "";
         metaDescription = "";
         break;
-        default:
-            break;
+      case "/produtocronograma":
+        title = "";
+        metaDescription = "";
+        break;
+      default:
+        break;
     }
 
     if (title) {
@@ -65,11 +85,19 @@ function App() {
     <Routes>
       <Route path="/" element={<Login />} />
 
-      <Route path="/homepage" element={<Homepage />} />
+      <Route path="/home-page" element={<HomePage />} />
 
       <Route path="/products" element={<Products />} />
 
+      <Route path="/equipments" element={<Equipments />} />
+
+      <Route path="/users" element={<Users />} />
+
+      <Route path="/stock" element={<Stock />} />
+
       <Route path="/productsprocess" element={<ProductsProcess />} />
+
+      <Route path="/produtocronograma" element={<ProdutoCronograma />} />
     </Routes>
   );
 }

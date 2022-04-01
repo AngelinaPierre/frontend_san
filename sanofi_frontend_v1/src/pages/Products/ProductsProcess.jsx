@@ -1,16 +1,16 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { MenuSidebar } from "../../components/MenuSidebar/MenuSidebar";
-import { SystemBar } from "../../components/SystemBar/SystemBar";
-import { AppBar } from "../../components/AppBar/AppBar";
+import { Sidebar } from "../../components/Sidebar";
+import { ProgressBar } from "./components/ProgressBar";
+import { StageHeader } from "./components/StageHeader";
+import { StageStatus } from "./components/StageStatus";
+import { StageButtons } from "./components/StageButtons";
+import { SystemBarIcon } from "../../components/SystemBarIcon";
+import { AppBar } from "../../components/AppBar";
 import styles from "./css/ProductsProcess.module.css";
 
 export const ProductsProcess = () => {
   const navigate = useNavigate();
-
-  const onButtonContainer1Click = useCallback(() => {
-    navigate("/produtoprocessosdesenvolvimento");
-  }, [navigate]);
 
   const onTabLStates1Click = useCallback(() => {
     navigate("/produtocronograma");
@@ -18,282 +18,92 @@ export const ProductsProcess = () => {
 
   return (
     <div className={styles.productsProcessDiv}>
-      <MenuSidebar
-        icon="-icon8.svg"
-        icon1="-icon9.svg"
-        icon2="-icon15.svg"
-        icon3="-icon16.svg"
+      <Sidebar
+        icon="-icon30.svg"
+        icon1="-icon8.svg"
+        icon2="-icon33.svg"
+        headerLogo="header-logo5@2x.png"
+        icon3="-icon29.svg"
+        icon4="-icon31.svg"
       />
       <div className={styles.contentDiv}>
         <div className={styles.etapaProdutoDiv}>
-          <div className={styles.progressBarDiv}>
-            <div className={styles.linearBTrackDiv}>
-              <div className={styles.rectangleDiv} />
-            </div>
-            <div className={styles.linearAProgressBar}>
-              <div className={styles.rectangleDiv1} />
-            </div>
-          </div>
+          <ProgressBar />
           <div className={styles.contentDiv1}>
-            <div className={styles.headerDiv}>
-              <div className={styles.headerSubheadAndAvatarAut}>
-                <img className={styles.avatarIcon} alt="" src="-avatar4.svg" />
-                <div className={styles.headerSubheadAutolayout}>
-                  <div className={styles.headerDiv1}>Produto</div>
-                  <div className={styles.subheadDiv}>50% concluída</div>
-                </div>
-              </div>
-              <img className={styles.icon} alt="" src="-icon10.svg" />
-            </div>
-            <div className={styles.statusDiv}>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Testes de desenvolvimento
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Aprovar método</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Etapa de validação
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked1.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Relatório</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked2.svg"
-                />
-              </div>
-            </div>
-            <div className={styles.buttonsDiv}>
-              <div className={styles.buttonDiv}>
-                <div className={styles.labelDiv}>Button</div>
-              </div>
-              <div
-                className={styles.buttonDiv1}
-                onClick={onButtonContainer1Click}
-              >
-                <div className={styles.labelDiv}>Deltahes</div>
-              </div>
-            </div>
+            <StageHeader
+              avatar="-avatar4.svg"
+              header="Produto"
+              subhead="50% concluída"
+            />
+            <StageStatus
+              checkCircle="check-circle.svg"
+              secondaryText="Aprovar método"
+              radioButtonUnchecked="radio-button-unchecked.svg"
+              secondaryText1="Etapa de validação"
+              radioButtonUnchecked1="radio-button-unchecked1.svg"
+              radioButtonUnchecked2="radio-button-unchecked2.svg"
+              secondaryText2="Testes de desenvolvimento"
+            />
+            <StageButtons />
           </div>
         </div>
         <div className={styles.etapaIFADiv}>
-          <div className={styles.progressBarDiv}>
-            <div className={styles.linearBTrackDiv}>
-              <div className={styles.rectangleDiv} />
-            </div>
-            <div className={styles.linearAProgressBar1}>
-              <div className={styles.rectangleDiv1} />
-            </div>
-          </div>
+          <ProgressBar />
           <div className={styles.contentDiv1}>
-            <div className={styles.headerDiv}>
-              <div className={styles.headerSubheadAndAvatarAut}>
-                <img className={styles.avatarIcon} alt="" src="-avatar5.svg" />
-                <div className={styles.headerSubheadAutolayout}>
-                  <div className={styles.headerDiv1}>IFA</div>
-                  <div className={styles.subheadDiv}>75% concluída</div>
-                </div>
-              </div>
-              <img className={styles.icon} alt="" src="-icon10.svg" />
-            </div>
-            <div className={styles.statusDiv}>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Testes de desenvolvimento
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Incubar amostras</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle2.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Testes de validação
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle3.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Relatório</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked2.svg"
-                />
-              </div>
-            </div>
-            <div className={styles.buttonsDiv}>
-              <div className={styles.buttonDiv}>
-                <div className={styles.labelDiv}>Button</div>
-              </div>
-              <div className={styles.buttonDiv3}>
-                <div className={styles.labelDiv}>detalhes</div>
-              </div>
-            </div>
+            <StageHeader
+              avatar="-avatar5.svg"
+              header="IFA"
+              subhead="75% concluída"
+            />
+            <StageStatus
+              checkCircle="check-circle1.svg"
+              secondaryText="Incubar amostras"
+              radioButtonUnchecked="check-circle2.svg"
+              secondaryText1="Testes de validação"
+              radioButtonUnchecked1="check-circle3.svg"
+              radioButtonUnchecked2="radio-button-unchecked3.svg"
+            />
+            <StageButtons />
           </div>
         </div>
         <div className={styles.etapaEstabilidadeDiv}>
-          <div className={styles.progressBarDiv}>
-            <div className={styles.linearBTrackDiv}>
-              <div className={styles.rectangleDiv} />
-            </div>
-            <div className={styles.linearAProgressBar}>
-              <div className={styles.rectangleDiv1} />
-            </div>
-          </div>
+          <ProgressBar />
           <div className={styles.contentDiv1}>
-            <div className={styles.headerDiv}>
-              <div className={styles.headerSubheadAndAvatarAut}>
-                <img className={styles.avatarIcon} alt="" src="-avatar6.svg" />
-                <div className={styles.headerSubheadAutolayout}>
-                  <div className={styles.headerDiv1}>Estabilidade</div>
-                  <div className={styles.subheadDiv}>25% concluída</div>
-                </div>
-              </div>
-              <img className={styles.icon} alt="" src="-icon10.svg" />
-            </div>
-            <div className={styles.statusDiv}>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Validar método</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Adobe Sign</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="close.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Testes com amostras incubadas
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked1.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Relatório</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="radio-button-unchecked5.svg"
-                />
-              </div>
-            </div>
-            <div className={styles.buttonsDiv}>
-              <div className={styles.buttonDiv}>
-                <div className={styles.labelDiv}>Button</div>
-              </div>
-              <div className={styles.buttonDiv3}>
-                <div className={styles.labelDiv}>detalhes</div>
-              </div>
-            </div>
+            <StageHeader
+              avatar="-avatar6.svg"
+              header="Estabilidade"
+              subhead="25% concluída"
+            />
+            <StageStatus
+              checkCircle="check-circle4.svg"
+              secondaryText="Adobe Sign"
+              radioButtonUnchecked="close.svg"
+              secondaryText1="Testes com amostras incubadas"
+              radioButtonUnchecked1="radio-button-unchecked4.svg"
+              radioButtonUnchecked2="radio-button-unchecked2.svg"
+              secondaryText2="Validar método"
+            />
+            <StageButtons />
           </div>
         </div>
         <div className={styles.etapaDissoluoDiv}>
-          <div className={styles.progressBarDiv}>
-            <div className={styles.linearBTrackDiv}>
-              <div className={styles.rectangleDiv} />
-            </div>
-            <div className={styles.linearBTrackDiv}>
-              <div className={styles.rectangleDiv1} />
-            </div>
-          </div>
+          <ProgressBar />
           <div className={styles.contentDiv1}>
-            <div className={styles.headerDiv}>
-              <div className={styles.headerSubheadAndAvatarAut}>
-                <img className={styles.avatarIcon} alt="" src="-avatar7.svg" />
-                <div className={styles.headerSubheadAutolayout}>
-                  <div className={styles.headerDiv1}>Perfil de dissolução</div>
-                  <div className={styles.subheadDiv}>100% concluída</div>
-                </div>
-              </div>
-              <img className={styles.icon} alt="" src="-icon10.svg" />
-            </div>
-            <div className={styles.statusDiv}>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>
-                  Testes de desenvolvimento
-                </div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Testes do tipo X</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle2.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Testes do tipo Y</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle3.svg"
-                />
-              </div>
-              <div className={styles.statusDiv1}>
-                <div className={styles.secondaryTextDiv}>Relatório</div>
-                <img
-                  className={styles.checkCircleIcon}
-                  alt=""
-                  src="check-circle8.svg"
-                />
-              </div>
-            </div>
-            <div className={styles.buttonsDiv}>
-              <div className={styles.buttonDiv}>
-                <div className={styles.labelDiv}>Button</div>
-              </div>
-              <div className={styles.buttonDiv3}>
-                <div className={styles.labelDiv}>detalhes</div>
-              </div>
-            </div>
+            <StageHeader
+              avatar="-avatar7.svg"
+              header="Perfil de dissolução"
+              subhead="100% concluída"
+            />
+            <StageStatus
+              checkCircle="check-circle5.svg"
+              secondaryText="Testes do tipo X"
+              radioButtonUnchecked="check-circle6.svg"
+              secondaryText1="Testes do tipo Y"
+              radioButtonUnchecked1="check-circle7.svg"
+              radioButtonUnchecked2="check-circle8.svg"
+              secondaryText2="Testes de desenvolvimento"
+            />
+            <StageButtons />
           </div>
         </div>
       </div>
@@ -304,7 +114,7 @@ export const ProductsProcess = () => {
             <div className={styles.indicatorDiv}>
               <div className={styles.indicatorDiv1} />
             </div>
-            <div className={styles.tabDiv}>PROCESSOS</div>
+            <div className={styles.tabDiv}>Process</div>
           </div>
           <div className={styles.tabLStates1} onClick={onTabLStates1Click}>
             <div className={styles.tabsActiveTabIndicatoron} />
@@ -316,11 +126,11 @@ export const ProductsProcess = () => {
           </div>
         </div>
       </div>
-      <SystemBar />
+      <SystemBarIcon systemBar="system-bar2.svg" />
       <AppBar
+        leadingIconLUseHighEmphas="-leading-icon-l-use-high-emphasis5.svg"
         pageTitle="Dipirona - Genérico"
-        trailingIcons="trailing-icons2.svg"
-        leadingIconLUseHighEmphas="-leading-icon-l-use-high-emphasis2.svg"
+        trailingIcons="trailing-icons5.svg"
       />
     </div>
   );

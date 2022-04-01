@@ -1,188 +1,12 @@
-.rectangleDiv {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #6200ee;
-  opacity: 0.24;
-  mix-blend-mode: normal;
-}
-.linearBTrackDiv,
-.rectangleDiv {
-  width: 100%;
-  right: 0;
-}
-.linearAProgressBar,
-.linearBTrackDiv,
-.rectangleDiv1 {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
-.rectangleDiv1 {
-  width: 100%;
-  right: 0;
-  background-color: #6200ee;
-}
-.linearAProgressBar {
-  width: 50%;
-  right: 50%;
-}
-.avatarIcon,
-.progressBarDiv {
-  position: relative;
-  width: 344px;
-  height: 4px;
-  flex-shrink: 0;
-}
-.avatarIcon {
-  width: 40px;
-  height: 40px;
-  display: none;
-}
-.headerDiv1,
-.subheadDiv {
-  align-self: stretch;
-  position: relative;
-  display: inline-block;
-}
-.headerDiv1 {
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  font-weight: 500;
-}
-.subheadDiv {
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  line-height: 20px;
-}
-.headerSubheadAutolayout {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: 16px;
-}
-.headerSubheadAutolayout > * + * {
-  margin-top: 2px;
-}
-.headerSubheadAndAvatarAut {
-  width: 283px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.icon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  display: none;
-}
-.headerDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 344px;
-  height: 72px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  padding: 14px 16px 12px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-}
-.secondaryTextDiv {
-  position: relative;
-  letter-spacing: 0.4px;
-  line-height: 16px;
-  display: inline-block;
-}
-.checkCircleIcon {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-.statusDiv,
-.statusDiv1 {
-  display: flex;
-  justify-content: space-between;
-}
-.statusDiv1 {
-  width: 312px;
-  height: 13.43px;
-  flex-shrink: 0;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.statusDiv {
-  position: absolute;
-  top: 88px;
-  left: 16px;
-  height: 77px;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
-}
-.labelDiv {
-  position: relative;
-  letter-spacing: 1.25px;
-  line-height: 16px;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-}
-.buttonDiv,
-.buttonDiv1,
-.buttonsDiv {
-  flex-direction: row;
-  box-sizing: border-box;
-  align-items: center;
-}
-.buttonDiv {
-  border-radius: 4px;
-  display: none;
-  padding: 10px 8px 10px 6px;
-  justify-content: center;
-}
-.buttonDiv1,
-.buttonsDiv {
-  display: flex;
-}
-.buttonDiv1 {
-  border-radius: 4px;
-  padding: 10px 8px 10px 6px;
-  justify-content: center;
-  cursor: pointer;
-}
-.buttonsDiv {
-  position: absolute;
-  top: calc(50% - 22px - -101.5px);
-  left: calc(50% - 172px - 0px);
-  width: 344px;
-  height: 44px;
-  padding: 0 8px 8px;
-  justify-content: flex-end;
-  text-align: center;
-  font-size: 14px;
-  color: #6200ee;
-}
 .contentDiv1 {
   position: relative;
   width: 344px;
   height: 225px;
   flex-shrink: 0;
 }
+.etapaDissoluoDiv,
+.etapaEstabilidadeDiv,
+.etapaIFADiv,
 .etapaProdutoDiv {
   position: absolute;
   top: 73px;
@@ -199,41 +23,11 @@
   align-items: center;
   justify-content: flex-start;
 }
-.linearAProgressBar1 {
-  position: absolute;
-  height: 100%;
-  width: 75%;
-  top: 0;
-  right: 25%;
-  bottom: 0;
-  left: 0;
-}
-.buttonDiv3 {
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  padding: 10px 8px 10px 6px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-}
 .etapaDissoluoDiv,
 .etapaEstabilidadeDiv,
 .etapaIFADiv {
-  position: absolute;
-  top: 73px;
   left: 392px;
-  border-radius: 4px;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.12),
-    0 1px 3px rgba(0, 0, 0, 0.2);
-  width: 344px;
   height: 243px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 .etapaDissoluoDiv,
 .etapaEstabilidadeDiv {
@@ -244,46 +38,49 @@
 .etapaDissoluoDiv {
   left: 392px;
 }
-.containerDiv,
 .contentDiv {
   position: absolute;
-  width: 938px;
-}
-.contentDiv {
-  top: 80px;
-  left: 256px;
-  height: 754px;
+  top: 129px;
+  left: 263px;
+  width: 946px;
+  height: 705px;
   overflow-y: auto;
 }
 .containerDiv {
+  position: absolute;
   top: 0;
   left: 0;
   background-color: #fff;
   border: 0.3px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
+  width: 953px;
   height: 49px;
 }
 .indicatorDiv,
 .indicatorDiv1 {
   position: absolute;
-  width: 100%;
-  right: 0;
   bottom: 0;
   left: 0;
+}
+.indicatorDiv1 {
+  width: calc(100% - 0.36px);
+  right: 0.36px;
   background-color: #6200ee;
   height: 2px;
 }
 .indicatorDiv {
   height: 4.17%;
+  width: 100%;
   top: 95.83%;
+  right: 0;
   background-color: #fff;
 }
 .tabDiv {
   position: absolute;
-  width: 42.86%;
+  width: 32.34%;
   top: calc(50% - 8px - 0px);
-  right: 28.93%;
-  left: 28.21%;
+  right: 33.34%;
+  left: 34.32%;
   letter-spacing: 1.25px;
   line-height: 16px;
   text-transform: uppercase;
@@ -308,10 +105,10 @@
 }
 .tabDiv1 {
   position: absolute;
-  width: 51.43%;
+  width: 50.62%;
   top: calc(50% - 8px - 0px);
-  right: 24.52%;
-  left: 24.05%;
+  right: 24.7%;
+  left: 24.69%;
   letter-spacing: 1.25px;
   line-height: 16px;
   text-transform: uppercase;
@@ -347,8 +144,8 @@
 .tabsDiv1 {
   position: absolute;
   top: 1px;
-  left: 16px;
-  width: 420px;
+  left: 16.26px;
+  width: 426.72px;
   height: 48px;
   display: flex;
   flex-direction: row;
@@ -359,20 +156,17 @@
   position: absolute;
   top: 80px;
   left: 256px;
-  width: 938px;
+  width: 953px;
   height: 49px;
-  text-align: center;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
 }
 .productsProcessDiv {
   position: relative;
   background-color: #efefef;
   width: 100%;
-  height: 834px;
+  height: 844px;
   overflow: hidden;
-  text-align: left;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
   font-family: Roboto;
 }

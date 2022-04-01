@@ -1,109 +1,86 @@
 .rectangleDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  width: 465px;
-  height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 465px;
+    height: 480px;
 }
-.assistiveTextDiv,
-.esqueceuSuaSenha {
-  position: absolute;
-  letter-spacing: 0.4px;
+.esqueceuSuaSenha,
+.labelDiv {
   line-height: 16px;
+  font-family: Roboto;
+  text-align: left;
+  display: inline-block;
 }
 .esqueceuSuaSenha {
+  position: absolute;
   top: 306px;
   left: 69px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.87);
-  display: inline-block;
 }
-.assistiveTextDiv {
-  width: calc(100% - 277.51px);
-  top: 59px;
-  right: 261.51px;
-  left: 16px;
-  display: none;
-}
-.trailingIcon {
-  position: absolute;
-  top: calc(50% - 12px - 9px);
-  right: 11.51px;
-  width: 24px;
-  height: 24px;
-  display: none;
-}
-.textFieldOutline {
+.labelDiv {
   position: relative;
-  width: 323px;
-  height: 58px;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
 }
-.inputTextDiv {
+.submitButtonDiv,
+.textDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 4px 8px 4px 6px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.submitButtonDiv {
   position: absolute;
-  width: calc(100% - 281.51px);
-  top: 16px;
-  right: 265.51px;
-  left: 16px;
-  font-size: 16px;
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.87);
-  display: inline-block;
+  top: 306px;
+  left: 309px;
+  border-radius: 4px;
+  background-color: #6200ee;
+  padding: 6px 6px 6px 8px;
+  cursor: pointer;
 }
-.emailInputDiv {
+.emailInputTextField,
+.senhaInputTextField {
+  border: 0;
+  background-color: transparent;
   position: absolute;
-  height: 15.42%;
-  width: 69.36%;
-  top: 31.04%;
-  right: 17.36%;
-  bottom: 53.54%;
-  left: 13.28%;
+  height: 15.6%;
+  width: 71.42%;
+  top: 31.86%;
+  right: 12.57%;
+  bottom: 52.54%;
+  left: 16.01%;
 }
-.trailingIcon1 {
-  position: absolute;
-  top: calc(50% - 12px - 9px);
-  right: 11.51px;
-  width: 24px;
-  height: 24px;
+.senhaInputTextField {
+  top: 47.46%;
+  bottom: 36.94%;
 }
-.inputTextDiv1 {
-  position: absolute;
-  width: calc(100% - 277.51px);
-  top: 16px;
-  right: 261.51px;
-  left: 16px;
-  font-size: 16px;
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.87);
-  display: inline-block;
-}
-.senhaInputDiv {
-  position: absolute;
-  height: 15.42%;
-  width: 69.36%;
-  top: 46.46%;
-  right: 17.36%;
-  bottom: 38.13%;
-  left: 13.28%;
-}
+.form,
 .loginDiv {
   position: absolute;
+}
+.loginDiv {
   top: 97px;
   left: 69px;
   font-size: 34px;
   line-height: 36px;
+  font-family: Roboto;
   color: #000;
+  text-align: left;
   display: inline-block;
-}
-.formDiv {
-  position: absolute;
-  top: 177px;
+}   
+.form {
+  margin-top: 10px;
+  top: 120px;
   left: 364px;
   width: 465px;
   height: 480px;
-  text-align: left;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: Roboto;
 }

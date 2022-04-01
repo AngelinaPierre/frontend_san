@@ -1,0 +1,37 @@
+.secondaryTextDiv {
+  position: relative;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  display: inline-block;
+}
+.checkCircleIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.statusDiv,
+.statusDiv1 {
+  display: flex;
+  justify-content: space-between;
+}
+.statusDiv1 {
+  width: 312px;
+  height: 13.43px;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.statusDiv {
+  position: absolute;
+  top: 88px;
+  left: 16px;
+  height: 77px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Roboto;
+}

@@ -1,0 +1,44 @@
+.labelDiv {
+  position: relative;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.buttonDiv,
+.buttonDiv1,
+.buttonsDiv {
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.buttonDiv {
+  border-radius: 4px;
+  display: none;
+  padding: 10px 8px 10px 6px;
+  justify-content: center;
+}
+.buttonDiv1,
+.buttonsDiv {
+  display: flex;
+}
+.buttonDiv1 {
+  border-radius: 4px;
+  padding: 10px 8px 10px 6px;
+  justify-content: center;
+  cursor: pointer;
+}
+.buttonsDiv {
+  position: absolute;
+  top: calc(50% - 22px - -101.5px);
+  left: calc(50% - 172px - 0px);
+  width: 344px;
+  height: 44px;
+  padding: 0 8px 8px;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+  color: #6200ee;
+  font-family: Roboto;
+}

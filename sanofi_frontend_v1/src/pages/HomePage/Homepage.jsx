@@ -1,23 +1,25 @@
-import { MenuSidebar } from "../../components/MenuSidebar/MenuSidebar";
-import { AppBar } from "../../components/AppBar/AppBar";
-import { SystemBar } from "../../components/SystemBar/SystemBar";
-import styles from "./css/Homepage.module.css";
+import { Sidebar } from "../../components/Sidebar";
+import { AppBar } from "../../components/AppBar";
+import { SystemBarIcon } from "../../components/SystemBarIcon";
+import styles from "./css/HomePage.module.css";
 
-export const Homepage = () => {
+export const HomePage = () => {
   return (
-    <div className={styles.homepageDiv}>
-      <MenuSidebar
-        icon="-icon3.svg"
-        icon1="-icon4.svg"
-        icon2="-icon1.svg"
-        icon3="-icon2.svg"
+    <div className={styles.homePageDiv}>
+      <Sidebar
+        icon="-icon1.svg"
+        icon1="-icon3.svg"
+        icon2="-icon4.svg"
+        headerLogo="header-logo@2x.png"
+        icon3="-icon.svg"
+        icon4="-icon2.svg"
       />
       <AppBar
-        pageTitle="Tela Inicial"
-        trailingIcons="trailing-icons.svg"
         leadingIconLUseHighEmphas="-leading-icon-l-use-high-emphasis.svg"
+        pageTitle="Home Page"
+        trailingIcons="trailing-icons.svg"
       />
-      <SystemBar />
+      <SystemBarIcon systemBar="system-bar.svg" />
     </div>
   );
 };

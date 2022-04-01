@@ -1,0 +1,195 @@
+.imagemIcon {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 906px;
+  height: 324px;
+  object-fit: cover;
+}
+.icon,
+.labelDiv {
+  position: relative;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.labelDiv {
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.outlined2TextIconDiv,
+.textDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 4px 8px 4px 6px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.outlined2TextIconDiv {
+  position: absolute;
+  top: 0;
+  left: 769px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 6px 6px 6px 8px;
+}
+.ltimaAtualizao07DeMaro {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+  width: 769px;
+  height: 29px;
+}
+.cronogramaDiv {
+  position: absolute;
+  top: 73px;
+  left: 16px;
+  width: 906px;
+  height: 376px;
+}
+.containerDiv,
+.contentDiv {
+  position: absolute;
+  width: 953px;
+}
+.contentDiv {
+  top: 129px;
+  left: 256px;
+  height: 705px;
+  overflow-y: auto;
+}
+.containerDiv {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 0.3px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  height: 49px;
+}
+.tabsActiveTabIndicatoron {
+  position: absolute;
+  height: 4.17%;
+  width: 100%;
+  top: 95.83%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.tabDiv {
+  position: absolute;
+  width: 32.34%;
+  top: calc(50% - 8px - 0px);
+  right: 33.34%;
+  left: 34.32%;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.tabLStates {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  height: 48px;
+  cursor: pointer;
+}
+.indicatorDiv,
+.indicatorDiv1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #6200ee;
+}
+.indicatorDiv1 {
+  width: calc(100% - 0.36px);
+  right: 0.36px;
+  height: 2px;
+}
+.indicatorDiv {
+  height: 4.17%;
+  width: 100%;
+  top: 95.83%;
+  right: 0;
+}
+.tabDiv1 {
+  position: absolute;
+  width: 50.62%;
+  top: calc(50% - 8px - 0px);
+  right: 24.7%;
+  left: 24.69%;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.tabLStates1 {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  height: 48px;
+  color: #6200ee;
+}
+.tabDiv2 {
+  position: absolute;
+  width: 24.17%;
+  top: calc(50% - 8px - 0px);
+  right: 37.5%;
+  left: 38.33%;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.tabLStates2 {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  height: 48px;
+  display: none;
+}
+.tabsDiv1 {
+  position: absolute;
+  top: 1px;
+  left: 16.26px;
+  width: 426.72px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tabsDiv {
+  position: absolute;
+  top: 80px;
+  left: 256px;
+  width: 953px;
+  height: 49px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.produtoCronogramaDiv {
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  color: #6200ee;
+  font-family: Roboto;
+}

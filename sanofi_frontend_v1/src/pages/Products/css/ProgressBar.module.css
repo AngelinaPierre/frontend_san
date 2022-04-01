@@ -1,0 +1,39 @@
+.rectangleDiv {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6200ee;
+  opacity: 0.24;
+  mix-blend-mode: normal;
+}
+.linearBTrackDiv,
+.rectangleDiv {
+  width: 100%;
+  right: 0;
+}
+.linearAProgressBar,
+.linearBTrackDiv,
+.rectangleDiv1 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.rectangleDiv1 {
+  width: 100%;
+  right: 0;
+  background-color: #6200ee;
+}
+.linearAProgressBar {
+  width: 50%;
+  right: 50%;
+}
+.progressBarDiv {
+  position: relative;
+  width: 344px;
+  height: 4px;
+  flex-shrink: 0;
+}
