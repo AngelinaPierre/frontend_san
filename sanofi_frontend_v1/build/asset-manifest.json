@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AngelinaPierre/frontend_san/static/css/main.110bff23.css",
+    "main.js": "/AngelinaPierre/frontend_san/static/js/main.79afc16d.js",
+    "index.html": "/AngelinaPierre/frontend_san/index.html",
+    "main.110bff23.css.map": "/AngelinaPierre/frontend_san/static/css/main.110bff23.css.map",
+    "main.79afc16d.js.map": "/AngelinaPierre/frontend_san/static/js/main.79afc16d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.110bff23.css",
+    "static/js/main.79afc16d.js"
+  ]
+}
