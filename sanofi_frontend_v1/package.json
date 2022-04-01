@@ -2,7 +2,8 @@
     "name": "sanofi",
     "author": "AngelinaPierre",
     "version": "0.1.0",
-    "homepage": "https://AngelinaPierre.github.io/react-front",
+    "homepage": "http://AngelinaPierre.github.io/react-front",
+    "main":"./index.js",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.8.2",
